@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      height: 100svh;
+      background-color: rgba(216, 230, 224, 0.4);
+    }
+    .main {
+      height: 600px;
+      background-color: rgb(216, 230, 224);
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      background-color: rgb(255, 255, 255);
+      height: 100%;
+      width: 100%;
+      /* display: flex; */
+      /* justify-content: center; */
+      padding: 1px;
+      box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.3);
+    }
+    .card-header {
+      background-color: #d9a9d9;
+      width: 100%;
+      /* height: 250px; */
+      aspect-ratio: 16/9;
+    }
+    .card-body {
+      padding: 0 20px;
+
+      & p {
+        text-align: justify;
+      }
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background-color: #4570ff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+
+      & img {
+        filter: invert(1);
+      }
+    }
+  </style>
+  <body>
+    <div class="main">
+      <div class="card">
+        <div class="card-header"></div>
+
+        <div class="card-body">
+          <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            consectetur unde earum laboriosam, minima aspernatur veritatis sit
+            atque natus excepturi fugit nihil deleniti, impedit possimus esse ea
+            rem aperiam placeat. Provident consectetur unde earum laboriosam,
+            minima aspernatur veritatis sit atque natus excepturi fugit nihil
+            deleniti, impedit possimus esse ea rem aperiam placeat.
+          </p>
+          <button class="btn">
+            Find out more
+            <img
+              src="https://www.svgrepo.com/download/510165/right-arrow.svg"
+              style="height: 25px; width: 25px"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
