@@ -30,50 +30,99 @@
       }
       .im {
         display: flex;
-        gap :40px ;
+        gap: 40px;
         justify-content: center;
-        & div {
+        align-items: center;
+        & .cover {
           width: 260px;
           height: 280px;
+          justify-content: center;
+          align-items: center;
           & img {
             height: 100%;
             width: 100%;
             object-fit: cover;
+          }
+          & span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background-color: aqua; */
+            font-family: "Montserrat", sans-serif;
+            padding: 5px 10px;
+          }
+          & button {
+            background-color: #f1ae0e;
+            margin-top: 14px;
+            padding: 18px 28px;
+            border-radius: 999px;
+            border: none;
+            background-color: #f2b400;
+            font-family: "Montserrat", sans-serif;
+            cursor: pointer;
+            color: white;
           }
         }
         & img {
           border-radius: 30px;
         }
       }
+      .btn {
+        margin-top: 10px;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        /* display: block; */
+        justify-content: center;
+        align-items: center;
+      }
+      .btn button:hover {
+        background-color: #f1ae0e;
+      }
     </style>
   </head>
   <body>
     <div class="Menu"><h1>View Our Menu</h1></div>
     <div class="im">
-      <div>
+      <div class="cover">
         <img
           src="https://assets.nicepagecdn.com/11a8ddce/4267640/images/delicious-pizza-isolated-white.jpg"
           alt=""
         />
-        <h2>HOT PIZZA</h2>
+        <div class="btn">
+          <span><h3>HOT PIZZA</h3></span>
+          <button>READ MORE</button>
+        </div>
       </div>
-      <div>
+      <div class="cover">
         <img
           src="https://assets.nicepagecdn.com/11a8ddce/4267640/images/high-angle-shot-vegetable-salad-white-bowl.jpg"
           alt=""
         />
+        <div class="btn">
+          <span><h3>SALADS</h3></span>
+          <button>READ MORE</button>
+        </div>
       </div>
-      <div>
+      <div class="cover">
         <img
           src="https://assets.nicepagecdn.com/11a8ddce/4267640/images/pexels-photo-3681641.jpeg"
           alt=""
         />
+        <div class="btn">
+          <span><h3>DESSERT</h3></span>
+          <button>READ MORE</button>
+        </div>
       </div>
-      <div>
+      <div class="cover">
         <img
           src="https://assets.nicepagecdn.com/11a8ddce/4267640/images/pexels-photo-3939602.jpeg"
           alt=""
         />
+        <div class="btn">
+          <span><h3>DRINKS</h3></span>
+          <button>READ MORE</button>
+        </div>
       </div>
     </div>
   </body>
