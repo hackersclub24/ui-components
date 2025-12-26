@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f9f6ee;
+      }
+      .Menu {
+        margin-top: 50px;
+        width: auto;
+        height: 100px;
+        /* background-color: aqua; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        & h1 {
+          font-family: "Montserrat", sans-serif;
+          font-size: 48px;
+          font-weight: 700;
+        }
+      }
+      .im {
+        display: flex;
+        gap :40px ;
+        justify-content: center;
+        & div {
+          width: 260px;
+          height: 280px;
+          & img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        & img {
+          border-radius: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Menu"><h1>View Our Menu</h1></div>
+    <div class="im">
+      <div>
+        <img
+          src="https://assets.nicepagecdn.com/11a8ddce/4267640/images/delicious-pizza-isolated-white.jpg"
+          alt=""
+        />
+        <h2>HOT PIZZA</h2>
+      </div>
+      <div>
+        <img
+          src="https://assets.nicepagecdn.com/11a8ddce/4267640/images/high-angle-shot-vegetable-salad-white-bowl.jpg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://assets.nicepagecdn.com/11a8ddce/4267640/images/pexels-photo-3681641.jpeg"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://assets.nicepagecdn.com/11a8ddce/4267640/images/pexels-photo-3939602.jpeg"
+          alt=""
+        />
+      </div>
+    </div>
+  </body>
+</html>
