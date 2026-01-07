@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
       * {
         margin: 0;
         padding: 0;
@@ -58,8 +59,49 @@
         background-color: red;
       }
 
-      img {
+      .img-container {
         width: 100%;
+        /* max-width: 600px; */
+        height: 640px;
+        background-image: url("https://www.w3schools.com/w3images/chicago.jpg");
+        background-size: cover;
+        /* background-position: center; */
+        position: relative;
+        /* margin: 20px auto; */
+        display: flex;
+        flex-direction: column;
+      }
+
+      #chicago {
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 25px;
+        font-family: "Montserrat", sans-serif;
+
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+      }
+      #bottom-line {
+        position: absolute;
+        bottom: 30px;
+        font-family: "Montserrat", sans-serif;
+
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 25px;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+      }
+      .t-shirt {
+        padding: 64px 16px;
+        & div {
+          font-family: "Montserrat", sans-serif;
+          display: flex;
+          /* flex-direction: column; */
+          justify-content: center;
+        }
       }
     </style>
   </head>
@@ -122,6 +164,15 @@
         </svg>
       </div>
     </div>
-    <img src="https://www.w3schools.com/w3images/chicago.jpg" alt="" />
+    <section>
+      <div class="img-container">
+        <p id="chicago">Chicago</p>
+        <p id="bottom-line">Thank you, Chicago - A night we won't forget.</p>
+      </div>
+    </section>
+    <section class="t-shirt">
+      <div><p>THE BAND</p></div>
+      <div><p>heelo</p></div>
+    </section>
   </body>
 </html>
