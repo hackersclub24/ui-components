@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Band Website</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100..900&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ================= HEADER ================= */
+      .header {
+        height: 50px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .header > div {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+        color: white;
+        font-family: "Montserrat", sans-serif;
+        position: relative;
+      }
+
+      .header > div:hover {
+        background-color: #d4d3e0;
+        cursor: pointer;
+      }
+
+      /* ================= SUB MENU ================= */
+      .sub_menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 150px;
+        background-color: white;
+        color: black;
+        list-style: none;
+        padding: 20px;
+        gap: 10px;
+        flex-direction: column;
+        z-index: 1000;
+      }
+
+      .header > div:hover .sub_menu,
+      .sub_menu:hover {
+        display: flex;
+      }
+
+      .sub_menu li {
+        padding: 6px 0;
+      }
+
+      .sub_menu li:hover {
+        background-color: #eee;
+      }
+
+      /* ================= SEARCH ================= */
+      .search {
+        margin-left: auto;
+      }
+
+      .header > div.search:hover {
+        background-color: red;
+      }
+
+      /* ================= HERO IMAGE ================= */
+      .img-container {
+        width: 100%;
+        height: 640px;
+        background-image: url("https://www.w3schools.com/w3images/chicago.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+
+      #chicago {
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 25px;
+        font-family: "Montserrat", sans-serif;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+      }
+
+      #bottom-line {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 25px;
+        font-family: "Montserrat", sans-serif;
+        text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+      }
+
+      /* ================= BAND SECTION ================= */
+      .t-shirt {
+        padding: 64px 16px;
+      }
+
+      .t-shirt div {
+        display: flex;
+        justify-content: center;
+        font-family: "Montserrat", sans-serif;
+        margin-bottom: 12px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+    <div class="header">
+      <div>HOME</div>
+      <div>BAND</div>
+      <div>TOUR</div>
+      <div>CONTACT</div>
+
+      <div>
+        <span>MORE</span>
+        <svg fill="#fff" width="30px" height="12px" viewBox="0 0 24 24">
+          <path
+            d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"
+          />
+        </svg>
+
+        <ul class="sub_menu">
+          <li>Merchandise</li>
+          <li>Extras</li>
+          <li>Media</li>
+        </ul>
+      </div>
+
+      <div class="search">
+        <svg width="64px" height="20px" viewBox="0 0 24 24">
+          <path
+            d="M16.6725 16.6412L21 21M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+            stroke="#fff"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <!-- ================= IMAGE ================= -->
+    <section>
+      <div class="img-container">
+        <p id="chicago">Chicago</p>
+        <p id="bottom-line">
+          Thank you, Chicago - A night we won't forget.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= BAND ================= -->
+    <section class="t-shirt">
+      <div><p>THE BAND</p></div>
+      <div><p>Hello</p></div>
+    </section>
+  </body>
+</html>
