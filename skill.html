@@ -5,27 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .box {
-        width: 400px;
+      body {
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/067/072/741/small/dark-room-scene-spotlight-concrete-wall-floor-background-photo.jpg");
+        background-size: cover;
+        /* background-position: center; */
+        background-repeat: no-repeat;
+      }
+      /* .box {
+        width: 80%;
+        height: 450px;
         padding: 30px;
         background: rgba(255, 255, 255, 0.08);
         border-radius: 16px;
         border: 1px solid rgba(255, 255, 255, 0.1);
         color: #e5e7eb;
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5); */
+        /* .skills{
+          padding: 80px 10%;
+          background: #0f172a;
+          color: #e5e7eb;
+        } */
 
-        /* positioning */
-        margin: 100px auto;
-      }
+        .section-title {
+          font-size: 2.5rem;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+          text-align: center;
+          color: #94a3b8;
+          margin-bottom: 50px;
+        }
+
+        .skills-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 25px;
+        }
+
+        .skill-card {
+          background: #020617;
+          padding: 25px;
+          border-radius: 14px;
+          transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+          border: 1px solid #1e293b;
+        }
+
+        .skill-card h3 {
+          font-size: 1.3rem;
+          margin-bottom: 10px;
+          color: #38bdf8;
+        }
+
+        .skill-card p {
+          color: #cbd5f5;
+          line-height: 1.6;
+        }
+
+        .skill-card:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15);
+        }
+
     </style>
   </head>
   <body>
-    <div class="box">
-      <h2>About Me</h2>
-      <p>
-        I’m a Computer Science student exploring web development and learning
-        how real-world applications are built.
+    <section class="skills" id="skills">
+      <h2 class="section-title">My Skills</h2>
+      <p class="section-subtitle">
+        Technologies and tools I use to build and experiment with ideas.
       </p>
-    </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <p>HTML5, CSS3, JavaScript, SCSS, Tailwind, Bootstrap</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <p>Python, C, C++, Data Structures & Algorithms</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>Git, GitHub, VS Code, Linux (Basics)</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>UI / UX</h3>
+          <p>Responsive Design, Typography, Color Palettes</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Learning</h3>
+          <p>AI / ML Fundamentals, Backend Basics, APIs</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>Strengths</h3>
+          <p>Problem Solving, Fast Learner, Curious Mindset</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
