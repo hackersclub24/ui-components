@@ -24,11 +24,16 @@ nav ul {
   display: flex;
   gap: 20px;
 }
-nav >ul>li:hover{
-    cursor: pointer;
-    border-bottom: 1px solid #cc9966;
-    color: #cc9966;
-    transition: color 0.3s ease;
+nav ul li a {
+  text-decoration: none;
+  color:#858585;
+}
+nav > ul > li > a:hover {
+  display: block;
+  cursor: pointer;
+  border-bottom: 1px solid #cc9966;
+  color: #cc9966;
+  transition: all 0.5s ease;
 }
 
 .button button {
@@ -48,14 +53,18 @@ nav >ul>li:hover{
 .cart-icon {
   width: 28px;
   height: 28px;
-  color: white;              /* default color */
+  color: white; /* default color */
   transition: color 0.3s ease;
 }
 
 .cart-icon .cls-1 {
-  stroke: currentColor;      /*key line*/
+  stroke: currentColor; /*key line*/
 }
 
 .button:hover .cart-icon {
   color: #cc9966;
+}
+
+.button button:hover::after {
+  content: "";
 }
