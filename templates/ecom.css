@@ -24,7 +24,7 @@ nav ul {
   position: relative;
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 24px;
 }
 nav ul li {
   position: relative;
