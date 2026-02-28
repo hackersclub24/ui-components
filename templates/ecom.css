@@ -99,7 +99,7 @@ nav ul li a {
 }
 
 /* underline */
-nav ul li a::after {
+nav ul li a::before {
   content: "";
   position: absolute;
   left: 0;
@@ -108,11 +108,12 @@ nav ul li a::after {
   height: 4px;
   background-color: #cc9966;
   transform: scaleX(0); /* hidden */
-  transform-origin: left; /* starts from left */
+  transform-origin: right; /* starts from left */
   transition: transform 0.4s ease;
 }
 
 /* loading animation on hover */
-nav ul li a:hover::after {
+nav ul li a:hover::before {
+  transform-origin: left;
   transform: scaleX(1);
 }
