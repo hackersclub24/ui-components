@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let entry_number = prompt("enter the no of entries");
+      // document.write(typeof entry_number)
+      document.write(`
+      <table border='1' style='border-collapse: collapse'>
+        <tr>
+            <th>Serial No.</th>
+            <th>Subject Name</th>
+            <th>Subject Marks</th>
+        </tr>
+    `);
+
+      for (let i = 0; i < Number(entry_number); i++) {
+        const Sub_Name = prompt(`Enter the name of the subject`);
+        const S_no = prompt(`Enter the marks of ${i + 1} subject`);
+        document.write("<tr>");
+        document.write("<td>");
+        document.write(`${i + 1}`);
+        document.write("</td>");
+        document.write("<td>");
+        document.write(`${Sub_Name}`);
+        document.write("</td>");
+        document.write("<td>");
+        document.write(`${S_no}`);
+        document.write("</td>");
+        document.write("</tr>");
+      }
+      document.write("</table>");
+    </script>
+  </body>
+</html>
